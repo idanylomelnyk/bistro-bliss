@@ -1,0 +1,142 @@
+.top-bar {
+  background-color: $color-dark-background;
+
+  &__wrapper {
+    display: none;
+    height: 45px;
+
+    @include medium-plus {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.contacts-info {
+  display: flex;
+  gap: 25px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    fill: #fff;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-size: 16px;
+    color: $color-light-background;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.header-social {
+  display: flex;
+  gap: 4px;
+
+  &__link {
+    width: 27px;
+    height: 27px;
+    background-color: #5c5c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $color-decorative;
+    }
+  }
+
+  &__icon {
+    fill: #fff;
+  }
+}
+
+.nav {
+  padding-top: 29px;
+  padding-bottom: 20px;
+  background-color: $color-light-background;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation-list {
+  display: none;
+
+  @include medium {
+    display: flex;
+    gap: 4px;
+  }
+
+  @include large {
+    margin-left: 182px;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__link {
+    padding: 4px 16px;
+    border-radius: 34px;
+    font-family: $font-primary;
+    font-size: 16px;
+    color: $color-primary;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $color-hover;
+    }
+
+    &_active {
+      background-color: $color-hover;
+    }
+  }
+}
+
+.book-button {
+  display: none;
+  margin-left: auto;
+  padding: 12px 24px;
+  background-color: transparent;
+  border-radius: 118px;
+  border: 1.5px solid $color-primary;
+  font-family: $font-primary;
+  font-size: 16px;
+  color: #182226;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $color-decorative;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  @include large {
+    display: block;
+  }
+}

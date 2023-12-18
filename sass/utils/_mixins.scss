@@ -4,8 +4,20 @@
   }
 }
 
+@mixin small-plus {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
 @mixin medium {
   @media screen and (min-width: 768px) and (max-width: 1325px) {
+    @content;
+  }
+}
+
+@mixin medium-plus {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }

@@ -1,0 +1,94 @@
+.food-menu {
+  padding-top: $padding-length-mobile;
+  padding-bottom: $padding-length-mobile;
+
+  @include large {
+    padding-top: 92px;
+    padding-bottom: $padding-length;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.food-card {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @include medium {
+    margin-top: 48px;
+  }
+
+  @include large {
+    margin-top: 64px;
+  }
+
+  &__item {
+    flex-basis: 100%;
+    padding: 40px 34px 32px 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    border-radius: $image-radius;
+    border: 1.5px solid $color-hover;
+
+    @include small-plus {
+      flex-basis: 306px;
+    }
+  }
+
+  &__round {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 24px;
+    font-style: normal;
+    color: $color-primary;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.72px;
+  }
+
+  &__description {
+    margin-top: 15px;
+    max-width: 238px;
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 16px;
+    color: #414536;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__link {
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 16px;
+    color: $color-decorative;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

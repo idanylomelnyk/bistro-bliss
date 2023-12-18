@@ -3,6 +3,15 @@
 @import "./utils/_variables";
 
 @import "./components/_container";
+@import "./components/_mobile-menu";
+@import "./components/_section-title";
 
 @import "./layouts/_header";
 @import "./layouts/_footer";
+@import "./layouts/main/_hero";
+@import "./layouts/main/_food-menu";
+@import "./layouts/main/_about";
+@import "./layouts/main/_services";
+@import "./layouts/main/_delivery";
+@import "./layouts/main/_testimonials";
+@import "./layouts/main/_blog";
