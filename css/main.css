@@ -467,26 +467,26 @@ th {
 .hero {
   padding-top: 177px;
   padding-bottom: 173px;
-  background-image: url("/img/main/hero/background.webp");
+  background-image: url("../img/main/hero/background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
-    background-image: url("/img/main/hero/background-small.webp");
+    background-image: url("../img/main/hero/background-small.webp");
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1325px) {
   .hero {
-    background-image: url("/img/main/hero/background-medium.webp");
+    background-image: url("../img/main/hero/background-medium.webp");
   }
 }
 @media screen and (min-width: 1326px) {
   .hero {
     padding-top: 207px;
     padding-bottom: 203px;
-    background-image: url("/img/main/hero/background-large.webp");
+    background-image: url("../img/main/hero/background-large.webp");
   }
 }
 .hero__title {
