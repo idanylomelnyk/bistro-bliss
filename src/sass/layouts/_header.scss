@@ -1,0 +1,160 @@
+.navbar {
+  display: none;
+
+  @include medium-screen {
+    display: block;
+    background-color: #474747;
+  }
+
+  &__wrapper {
+    padding: 9px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navbar-contacts {
+  display: flex;
+  gap: 25px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin: 2px;
+    fill: #fff;
+  }
+
+  &__info {
+    color: #f9f9f7;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.navbar-social {
+  display: flex;
+  gap: 4px;
+
+  &__link {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5c5c;
+    border-radius: 50%;
+    transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: #ad343e;
+    }
+  }
+
+  &__icon {
+    fill: #fff;
+  }
+}
+
+.nav {
+  padding-top: 29px;
+  padding-bottom: 20px;
+  background-color: #f9f9f7;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @include medium-screen {
+    display: flex;
+    gap: 8px;
+  }
+
+  @include large-screen {
+    margin-left: 274px;
+  }
+
+  &__link {
+    display: block;
+    padding: 4px 16px;
+    color: #2c2f24;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &_active {
+      border-radius: 34px;
+      background: #dbdfd0;
+    }
+  }
+}
+
+.nav-booking {
+  display: none;
+
+  @include medium-screen {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 118px;
+    border: 1px solid #2c2f24;
+    color: #182226;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    background: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: #dbdfd0;
+    }
+  }
+
+  @include large-screen {
+    margin-left: auto;
+  }
+}
+
+.menu-toggle {
+  margin-left: 20px;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+
+  @include medium-screen {
+    display: none;
+  }
+
+  &__icon {
+    fill: #2c2f24;
+  }
+}
