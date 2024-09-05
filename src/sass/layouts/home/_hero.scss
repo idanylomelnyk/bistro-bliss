@@ -1,7 +1,7 @@
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: url("../../../../images/home/background.webp");
+  background: url("/images/home/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
   @include small-screen {
     padding-top: 125px;
     padding-bottom: 125px;
-    background: url("../../../../images/home/background-small.webp");
+    background: url("/images/home/background-small.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@
   @include medium-screen {
     padding-top: 150px;
     padding-bottom: 150px;
-    background: url("../../../../images/home/background-medium.webp");
+    background: url("/images/home/background-medium.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,7 @@
   @include large-screen {
     padding-top: 207px;
     padding-bottom: 203px;
-    background: url("../../../../images/home/background-large.webp");
+    background: url("/images/home/background-large.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
