@@ -1,0 +1,156 @@
+.hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../../../../images/home/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include small-screen {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background: url("../../../../images/home/background-small.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include medium-screen {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: url("../../../../images/home/background-medium.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include large-screen {
+    padding-top: 207px;
+    padding-bottom: 203px;
+    background: url("../../../../images/home/background-large.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__title {
+    max-width: 290px;
+    color: #2c2f24;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.96;
+
+    @include small-screen {
+      max-width: 400px;
+      font-size: 60px;
+    }
+
+    @include medium-screen {
+      max-width: 500px;
+      font-size: 80px;
+    }
+
+    @include large-screen {
+      max-width: 667px;
+      font-size: 100px;
+    }
+  }
+
+  &__description {
+    max-width: 430px;
+    color: #2c2f24;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+
+    @include medium-screen {
+      max-width: 480px;
+      font-size: 18px;
+    }
+
+    @include large-screen {
+      max-width: 537px;
+      font-size: 20px;
+    }
+  }
+
+  &__actions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    @include medium-screen {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    width: 210px;
+    padding: 14px 50px;
+    border: none;
+    border-radius: 118px;
+    background: #ad343e;
+    text-align: center;
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 250ms linear;
+
+    @include medium-screen {
+      width: auto;
+      padding: 20px 32px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ad343ed0;
+    }
+  }
+
+  &__link {
+    width: 210px;
+    padding: 14px 50px;
+    border-radius: 118px;
+    outline: 1px solid #2c2f24;
+    text-align: center;
+    color: #182226;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: all 250ms linear;
+
+    @include medium-screen {
+      width: auto;
+      padding: 20px 32px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #dbdfd0;
+    }
+  }
+}
