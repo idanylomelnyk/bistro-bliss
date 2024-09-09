@@ -1,0 +1,116 @@
+.our-menu {
+  padding-top: 62px;
+  padding-bottom: 60px;
+
+  @include small-screen {
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+
+  @include medium-screen {
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+
+  @include large-screen {
+    padding-top: 92px;
+    padding-bottom: 120px;
+  }
+
+  &__title {
+    color: #2c2f24;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: capitalize;
+
+    @include small-screen {
+      font-size: 40px;
+    }
+
+    @include medium-screen {
+      font-size: 50px;
+    }
+
+    @include large-screen {
+      font-size: 55px;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    @include small-screen {
+      margin-top: 48px;
+    }
+
+    @include medium-screen {
+      margin-top: 56px;
+    }
+
+    @include large-screen {
+      margin-top: 64px;
+    }
+  }
+
+  &__item {
+    max-width: 306px;
+    padding: 40px 34px 32px 34px;
+    border-radius: 12px;
+    border: 1px solid #dbdfd0;
+  }
+
+  &__icon-wrap {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-title {
+    margin-top: 30px;
+    color: #2c2f24;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.72px;
+  }
+
+  &__description {
+    margin-top: 15px;
+    color: #414536;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__link {
+    margin-top: 30px;
+    display: block;
+    color: #ad343e;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+}
