@@ -1,0 +1,222 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f9f9f7;
+
+  @include small-screen {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include medium-screen {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include large-screen {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @include small-screen {
+      gap: 40px;
+    }
+
+    @include medium-screen {
+      gap: 70px;
+    }
+
+    @include large-screen {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 140px;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__img {
+    border-radius: 12px;
+
+    @include small-screen {
+      display: block;
+    }
+  }
+
+  &__context {
+    max-width: 557px;
+
+    @include large-screen {
+      padding: 80px 0;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 340px;
+    color: #2c2f24;
+    font-family: "Playfair Display";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+
+    @include small-screen {
+      max-width: 390px;
+      font-size: 40px;
+    }
+
+    @include medium-screen {
+      max-width: 470px;
+      font-size: 50px;
+    }
+
+    @include large-screen {
+      margin: 0;
+      max-width: 557px;
+      font-size: 55px;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    margin-top: 24px;
+    color: #414536;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+
+    @include small-screen {
+    }
+
+    @include medium-screen {
+    }
+
+    @include large-screen {
+      text-align: left;
+    }
+
+    &_selected {
+      color: #2c2f24;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.55;
+    }
+  }
+
+  &__link-wrap {
+    display: flex;
+    justify-content: center;
+
+    @include large-screen {
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    width: 210px;
+    padding: 14px 0px;
+    margin-top: 40px;
+    border-radius: 118px;
+    outline: 1px solid #2c2f24;
+    text-align: center;
+    color: #182226;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 250ms linear;
+
+    @include medium-screen {
+      display: inline-block;
+      padding: 20px 32px;
+      width: auto;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #dbdfd0;
+    }
+  }
+}
+
+.about-card {
+  display: none;
+
+  @include small-screen {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 411px;
+    height: 321px;
+    padding: 50px;
+    background-color: #474747;
+    border-radius: 12px;
+  }
+
+  @include medium-screen {
+  }
+
+  @include large-screen {
+    top: 295px;
+    left: 238px;
+    transform: translate(0, 0);
+  }
+
+  &__title {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.72px;
+  }
+
+  &__list {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__icon {
+    fill: #fff;
+  }
+
+  &__info {
+    max-width: 267px;
+    color: #f9f9f7;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+}
