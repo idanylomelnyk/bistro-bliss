@@ -1,0 +1,122 @@
+.reviews {
+  padding-top: 68px;
+  padding-bottom: 75px;
+
+  @include small-screen {
+    padding-top: 78px;
+    padding-bottom: 95px;
+  }
+
+  @include medium-screen {
+    padding-top: 88px;
+    padding-bottom: 115px;
+  }
+
+  @include large-screen {
+    padding-top: 98px;
+    padding-bottom: 135px;
+  }
+
+  &__heading {
+    color: #2c2f24;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+
+    @include small-screen {
+      font-size: 40px;
+    }
+
+    @include medium-screen {
+      font-size: 50px;
+    }
+
+    @include large-screen {
+      font-size: 55px;
+    }
+  }
+
+  &__list {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    @include medium-screen {
+      margin-top: 64px;
+    }
+  }
+
+  &__item {
+    max-width: 416px;
+    padding: 45px 35px 35px 35px;
+    border-radius: 12px;
+    background-color: #f9f9f7;
+  }
+
+  &__title {
+    color: #ad343e;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.72px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    color: #414536;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.56;
+  }
+
+  &__author {
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: -32px;
+      opacity: 0.7;
+      background-color: #dbdfd0;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: #2c2f24;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__city {
+    margin-top: 3px;
+    color: #414536;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
