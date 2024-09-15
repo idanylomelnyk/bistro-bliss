@@ -143,11 +143,64 @@
 
             <button class="nav-booking" type="button">Book a table</button>
 
-            <button class="menu-toggle" type="button">
+            <button class="menu-toggle js-menu-toggle" type="button">
               <svg class="menu-toggle__icon" width="28" height="28">
                 <use href="./icons/sprite.svg#menu"></use>
               </svg>
             </button>
+          </div>
+        </div>
+
+        <div class="mobile-menu menu-is-hide js-mobile-menu">
+          <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="./">Home</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">About</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">Menu</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">Pages</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__social">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -795,5 +848,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="./src/js/mobile-menu.js" defer></script>
   </body>
 </html>
