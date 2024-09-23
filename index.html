@@ -20,8 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Playfair+Display:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-ElRynls7.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-B_IphUSE.css">
+    <script type="module" crossorigin src="./assets/index-CSVfMh0V.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-LoekJnvR.css">
   </head>
   <body>
     <header class="header">
@@ -147,7 +147,9 @@
               </li>
             </ul>
 
-            <button class="nav-booking" type="button">Book a table</button>
+            <button class="nav-booking js-nav-booking" type="button">
+              Book a table
+            </button>
 
             <button class="menu-toggle js-menu-toggle" type="button">
               <svg class="menu-toggle__icon" width="28" height="28">
@@ -235,6 +237,106 @@
               </svg>
             </a>
           </div>
+        </div>
+
+        <div class="booking-form__overlay js-booking-form booking-form-is-hide">
+          <form class="booking-form" action="" method="get">
+            <div class="booking-form__close">
+              <button
+                class="booking-form__close-button js-booking-form__close-button"
+                type="button"
+              >
+                <svg class="booking-form__close-icon" width="20" height="20">
+                  <use href="./icons/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="booking-form__row">
+              <div class="booking-form__field">
+                <label class="booking-form__label" for="date">Date</label>
+                <input
+                  class="booking-form__input js-date-input"
+                  type="date"
+                  name="date"
+                  id="date"
+                  required
+                />
+                <svg class="booking-form__icon" width="16" height="16">
+                  <use href="./assets/sprite-jpnfpl8X.svg#calendar"></use>
+                </svg>
+              </div>
+              <div class="booking-form__field">
+                <label class="booking-form__label" for="time">Time</label>
+                <input
+                  class="booking-form__input js-time-input"
+                  type="time"
+                  name="time"
+                  id="time"
+                  min="09:00"
+                  max="21:00"
+                  required
+                />
+                <svg class="booking-form__icon" width="16" height="16">
+                  <use href="./assets/sprite-jpnfpl8X.svg#clock"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="booking-form__row">
+              <div class="booking-form__field">
+                <label class="booking-form__label" for="name">Name</label>
+                <input
+                  class="booking-form__input js-name-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  minlength="2"
+                  maxlength="26"
+                  required
+                />
+              </div>
+              <div class="booking-form__field">
+                <label class="booking-form__label" for="phone">Phone</label>
+                <input
+                  class="booking-form__input js-tel-input"
+                  type="tel"
+                  name="tel"
+                  id="phone"
+                  placeholder="x-xxx-xxx-xxxx"
+                  minlength="11"
+                  maxlength="11"
+                  required
+                />
+              </div>
+            </div>
+            <div class="booking-form__row">
+              <div class="booking-form__field">
+                <label class="booking-form__label" for="total">Total</label>
+                <select
+                  class="booking-form__select"
+                  name="total"
+                  id="total"
+                  required
+                >
+                  <option value="1">1 person</option>
+                  <option value="2">2 person</option>
+                  <option value="3">3 person</option>
+                  <option value="4">4 person</option>
+                  <option value="more">More</option>
+                </select>
+                <svg class="booking-form__icon" width="16" height="16">
+                  <use href="./assets/sprite-jpnfpl8X.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+
+            <button
+              class="booking-form__button js-booking-form__button"
+              type="submit"
+            >
+              Book a table
+            </button>
+          </form>
         </div>
       </section>
 
@@ -862,6 +964,6 @@
         </div>
       </div>
     </footer>
-
+
   </body>
 </html>
