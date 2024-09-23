@@ -1,19 +1,22 @@
-const bookingFormOpenBtn = document.querySelector(".js-nav-booking");
+const bookingFormOpenBtnEl = document.querySelector(".js-nav-booking");
 const bookingFormOverlayEl = document.querySelector(".js-booking-form");
 const bookingFormEl = document.querySelector(".booking-form");
 const bookingFormCloseBtnEl = document.querySelector(
   ".js-booking-form__close-button"
 );
+const bookingFormBookBtnEl = document.querySelector(".js-booking-form__button");
+const dateInputEl = document.querySelector(".js-date-input");
+const timeInputEl = document.querySelector(".js-time-input");
 
-function handleOpenBookingForm() {
+const handleOpenBookingForm = () => {
   bookingFormOverlayEl.classList.remove("booking-form-is-hide");
-}
+};
 
-function handleCloseBookingForm() {
+const handleCloseBookingForm = () => {
   bookingFormOverlayEl.classList.add("booking-form-is-hide");
-}
+};
 
-bookingFormOpenBtn.addEventListener("click", handleOpenBookingForm);
+bookingFormOpenBtnEl.addEventListener("click", handleOpenBookingForm);
 bookingFormCloseBtnEl.addEventListener("click", handleCloseBookingForm);
 
 bookingFormOverlayEl.addEventListener("click", (e) => {
@@ -28,26 +31,31 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-const data = {
-  date: "",
-  time: "",
-  name: "",
-  tel: "",
-  total: "",
-  booking: "",
-};
-
 bookingFormEl.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  data.date = bookingFormEl.elements.date.value;
-  data.time = bookingFormEl.elements.time.value;
-  data.name = bookingFormEl.elements.name.value;
-  data.tel = bookingFormEl.elements.tel.value;
-  data.total = bookingFormEl.elements.total.value;
-  data.booking = new Date();
+  const data = {
+    date: bookingFormEl.elements.date.value,
+    time: bookingFormEl.elements.time.value,
+    name: bookingFormEl.elements.name.value,
+    tel: bookingFormEl.elements.tel.value,
+    total: bookingFormEl.elements.total.value,
+    booking: new Date(),
+  };
 
-  bookingFormEl.reset();
+  bookingFormBookBtnEl.textContent =
+    "Thank you! Your reservation is confirmed!";
+  bookingFormBookBtnEl.style.backgroundColor = "#708238";
+
+  setTimeout(() => {
+    handleCloseBookingForm();
+    bookingFormEl.reset();
+    dateInputEl.value = dateInputEl.min;
+    timeInputEl.value = "09:00";
+
+    bookingFormBookBtnEl.textContent = "Book a table";
+    bookingFormBookBtnEl.style.backgroundColor = "#ad343e";
+  }, 3000);
 
   console.log(data);
 

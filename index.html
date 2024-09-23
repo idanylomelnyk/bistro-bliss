@@ -258,7 +258,7 @@
                   type="date"
                   name="date"
                   id="date"
-                  value="2024-09-21"
+                  required
                 />
                 <svg class="booking-form__icon" width="16" height="16">
                   <use href="./public/icons/sprite.svg#calendar"></use>
@@ -273,6 +273,7 @@
                   id="time"
                   min="09:00"
                   max="21:00"
+                  required
                 />
                 <svg class="booking-form__icon" width="16" height="16">
                   <use href="./public/icons/sprite.svg#clock"></use>
@@ -288,6 +289,9 @@
                   name="name"
                   id="name"
                   placeholder="Enter your name"
+                  minlength="2"
+                  maxlength="26"
+                  required
                 />
               </div>
               <div class="booking-form__field">
@@ -298,13 +302,21 @@
                   name="tel"
                   id="phone"
                   placeholder="x-xxx-xxx-xxxx"
+                  minlength="11"
+                  maxlength="11"
+                  required
                 />
               </div>
             </div>
             <div class="booking-form__row">
               <div class="booking-form__field">
                 <label class="booking-form__label" for="total">Total</label>
-                <select class="booking-form__select" name="total" id="total">
+                <select
+                  class="booking-form__select"
+                  name="total"
+                  id="total"
+                  required
+                >
                   <option value="1">1 person</option>
                   <option value="2">2 person</option>
                   <option value="3">3 person</option>
@@ -317,7 +329,10 @@
               </div>
             </div>
 
-            <button class="booking-form__button" type="submit">
+            <button
+              class="booking-form__button js-booking-form__button"
+              type="submit"
+            >
               Book a table
             </button>
           </form>

@@ -11,7 +11,7 @@
   gap: 24px;
 
   &__overlay {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 50;
   }
 
   &__close {
@@ -126,12 +127,13 @@
     text-transform: capitalize;
     border: none;
     cursor: pointer;
+    transition: all 250ms linear;
   }
 }
 
-// .booking-form-is-hide {
-//   display: none;
-// }
+.booking-form-is-hide {
+  display: none;
+}
 
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
