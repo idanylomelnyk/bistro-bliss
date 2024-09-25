@@ -35,7 +35,7 @@ dateInputValidation();
 const timeInputValidation = () => {
   let currentTime = `${hours}:${minutes}`;
 
-  if (hours > 21) {
+  if (hours > 20) {
     currentTime = `09:00`;
   }
 

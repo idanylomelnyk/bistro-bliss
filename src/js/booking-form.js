@@ -8,6 +8,10 @@ const bookingFormBookBtnEl = document.querySelector(".js-booking-form__button");
 const dateInputEl = document.querySelector(".js-date-input");
 const timeInputEl = document.querySelector(".js-time-input");
 
+const bookingFormMobileOpenBtn = document.querySelector(
+  ".js-mobile-action__booking"
+);
+
 const handleOpenBookingForm = () => {
   bookingFormOverlayEl.classList.remove("booking-form-is-hide");
 };
@@ -17,6 +21,7 @@ const handleCloseBookingForm = () => {
 };
 
 bookingFormOpenBtnEl.addEventListener("click", handleOpenBookingForm);
+bookingFormMobileOpenBtn.addEventListener("click", handleOpenBookingForm);
 bookingFormCloseBtnEl.addEventListener("click", handleCloseBookingForm);
 
 bookingFormOverlayEl.addEventListener("click", (e) => {
@@ -43,19 +48,17 @@ bookingFormEl.addEventListener("submit", (e) => {
     booking: new Date(),
   };
 
-  bookingFormBookBtnEl.textContent =
-    "Thank you! Your reservation is confirmed!";
-  bookingFormBookBtnEl.style.backgroundColor = "#708238";
+  bookingFormEl.style.height = "auto";
+  bookingFormEl.innerHTML = `
+<p style="font-size: 22px; text-align: center">Thank you, ${bookingFormEl.elements.name.value}! We are waiting for you!</p>`;
 
   setTimeout(() => {
     handleCloseBookingForm();
     bookingFormEl.reset();
     dateInputEl.value = dateInputEl.min;
     timeInputEl.value = "09:00";
-
-    bookingFormBookBtnEl.textContent = "Book a table";
-    bookingFormBookBtnEl.style.backgroundColor = "#ad343e";
-  }, 3000);
+    location.reload();
+  }, 5000);
 
   console.log(data);
 

@@ -1,14 +1,21 @@
 .booking-form {
   position: relative;
-  width: 804px;
-  height: 492px;
-  padding: 40px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  padding: 25px;
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0px 2.979px 59.574px 0px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 24px;
+  overflow-y: auto;
+
+  @include medium-screen {
+    width: 804px;
+    height: 492px;
+    padding: 40px;
+  }
 
   &__overlay {
     position: fixed;
@@ -42,7 +49,12 @@
 
   &__row {
     display: flex;
+    flex-direction: column;
     gap: 24px;
+
+    @include medium-screen {
+      flex-direction: row;
+    }
   }
 
   &__field {
@@ -62,7 +74,7 @@
   }
 
   &__input {
-    width: 350px;
+    width: 100%;
     height: 60px;
     padding: 0px 24px;
     border-radius: 72px;
@@ -73,6 +85,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
+
+    @include medium-screen {
+      width: 350px;
+    }
 
     &:hover,
     &:focus {
@@ -96,7 +112,7 @@
   }
 
   &__select {
-    width: 724px;
+    width: 100%;
     height: 60px;
     padding: 0px 24px;
     border-radius: 72px;
@@ -107,6 +123,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
+
+    @include medium-screen {
+      width: 724px;
+    }
 
     &:hover,
     &:focus {
@@ -138,6 +158,13 @@
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
+}
+
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 select {
