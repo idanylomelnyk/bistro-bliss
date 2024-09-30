@@ -102,41 +102,11 @@
     }
   }
 
-  &__button {
-    width: 210px;
-    padding: 14px 50px;
-    border: none;
-    border-radius: 118px;
-    background: #ad343e;
-    text-align: center;
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: all 250ms linear;
-
-    @include medium-screen {
-      width: auto;
-      padding: 20px 32px;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: #ad343ed0;
-    }
-  }
-
   &__link {
     width: 210px;
     padding: 14px 50px;
     border-radius: 118px;
-    outline: 1px solid #2c2f24;
     text-align: center;
-    color: #182226;
     font-family: "DM Sans";
     font-size: 16px;
     font-style: normal;
@@ -151,9 +121,24 @@
       padding: 20px 32px;
     }
 
-    &:hover,
-    &:focus {
-      background-color: #dbdfd0;
+    &_primary {
+      color: #fff;
+      background: #ad343e;
+
+      &:hover,
+      &:focus {
+        background-color: #ad343ed0;
+      }
+    }
+
+    &_secondary {
+      color: #182226;
+      outline: 1px solid #2c2f24;
+
+      &:hover,
+      &:focus {
+        background-color: #dbdfd0;
+      }
     }
   }
 }
