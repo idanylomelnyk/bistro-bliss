@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Delicious meals from your favorite restaurant delivered right to your doorstep. Enjoy high-quality food and fast delivery with no hassle."
+    />
+    <meta name="author" content="Danylo Melnyk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Bliss | About</title>
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/sass/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar__wrapper">
+            <ul class="navbar-contacts">
+              <li class="navbar-contacts__item">
+                <a
+                  class="navbar-contacts__link"
+                  href="tel:+4148570107"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="navbar-contacts__icon"
+                    width="14"
+                    height="14"
+                    aria-label="phone-icon"
+                  >
+                    <use href="./icons/sprite.svg#phone"></use>
+                  </svg>
+                  <span class="navbar-contacts__info">(414) 857 - 0107</span>
+                </a>
+              </li>
+              <li class="navbar-contacts__item">
+                <a
+                  class="navbar-contacts__link"
+                  href="mailto:yummy@bistrobliss"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="navbar-contacts__icon"
+                    width="14"
+                    height="14"
+                    aria-label="mail-icon"
+                  >
+                    <use href="./icons/sprite.svg#mail"></use>
+                  </svg>
+                  <span class="navbar-contacts__info">yummy@bistrobliss</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="navbar-social">
+              <li class="navbar-social__item">
+                <a
+                  class="navbar-social__link"
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="twitter"
+                >
+                  <svg
+                    class="navbar-social__icon"
+                    width="14"
+                    height="14"
+                    aria-label="twitter icon"
+                  >
+                    <use href="./icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  class="navbar-social__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="facebook"
+                >
+                  <svg
+                    class="navbar-social__icon"
+                    width="14"
+                    height="14"
+                    aria-label="facebook icon"
+                  >
+                    <use href="./icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  class="navbar-social__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="instagram"
+                >
+                  <svg
+                    class="navbar-social__icon"
+                    width="14"
+                    height="14"
+                    aria-label="instagram icon"
+                  >
+                    <use href="./icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  class="navbar-social__link"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="github"
+                >
+                  <svg
+                    class="navbar-social__icon"
+                    width="14"
+                    height="14"
+                    aria-label="github icon"
+                  >
+                    <use href="./icons/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__wrapper">
+            <div class="logo">
+              <a class="logo__item" href="./">
+                <img
+                  class="logo__img"
+                  src="./images/logo.svg"
+                  width="281"
+                  height="55"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./"> Home </a>
+              </li>
+              <li class="nav-list__item">
+                <a
+                  class="nav-list__link nav-list__link_active"
+                  href="about.html"
+                >
+                  About
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Menu</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Pages</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <button class="nav-booking js-nav-booking" type="button">
+              Book a table
+            </button>
+
+            <button class="menu-toggle js-menu-toggle" type="button">
+              <svg class="menu-toggle__icon" width="28" height="28">
+                <use href="./icons/sprite.svg#menu"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="mobile-action">
+            <div class="mobile-action__booking js-mobile-action__booking">
+              <button class="mobile-action__booking-btn" type="button">
+                <svg
+                  class="mobile-action__booking-icon"
+                  width="18"
+                  height="18"
+                  aria-label="calendar icon"
+                >
+                  <use href="./icons/sprite.svg#calendar"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="mobile-action__call">
+              <a class="mobile-action__call-link" href="tel:+4148570107">
+                <svg
+                  class="mobile-action__call-icon"
+                  width="18"
+                  height="18"
+                  aria-label="call icon"
+                >
+                  <use href="./icons/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-menu menu-is-hide js-mobile-menu">
+          <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="./">Home</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="about.html">About</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">Menu</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">Pages</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__social">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link" href="#">
+                  <svg class="mobile-menu__social-icon" width="20" height="20">
+                    <use href="./icons/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="about about__container">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__content">
+              <img
+                class="about__img"
+                src="./images/about/rice.webp"
+                width="599"
+                height="566"
+                alt="rice"
+              />
+              <div class="about-card">
+                <h3 class="about-card__title">Come and visit us</h3>
+                <ul class="about-card__list">
+                  <li class="about-card__item">
+                    <a class="about-card__link" href="#">
+                      <svg
+                        class="about-card__icon"
+                        width="24"
+                        height="24"
+                        aria-label="phone icon"
+                      >
+                        <use href="./icons/sprite.svg#phone"></use>
+                      </svg>
+                      <span class="about-card__info">(414) 857 - 0107</span>
+                    </a>
+                  </li>
+                  <li class="about-card__item">
+                    <a class="about-card__link" href="#">
+                      <svg
+                        class="about-card__icon"
+                        width="24"
+                        height="24"
+                        aria-label="email icon"
+                      >
+                        <use href="./icons/sprite.svg#mail"></use>
+                      </svg>
+                      <span class="about-card__info"
+                        >happytummy@restaurant.com</span
+                      >
+                    </a>
+                  </li>
+                  <li class="about-card__item">
+                    <a class="about-card__link" href="#">
+                      <svg
+                        class="about-card__icon"
+                        width="24"
+                        height="24"
+                        aria-label="map pin icon"
+                      >
+                        <use href="./icons/sprite.svg#map-pin"></use>
+                      </svg>
+                      <span class="about-card__info"
+                        >837 W. Marshall Lane Marshalltown, IA 50158, Los
+                        Angeles</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about__context">
+              <h2 class="about__title">
+                We provide healthy food for your family.
+              </h2>
+              <p class="about__description about__description_selected">
+                Our story began with a vision to create a unique dining
+                experience that merges fine dining, exceptional service, and a
+                vibrant ambiance. Rooted in city's rich culinary culture, we aim
+                to honor our local roots while infusing a global palate.
+              </p>
+              <p class="about__description">
+                At place, we believe that dining is not just about food, but
+                also about the overall experience. Our staff, renowned for their
+                warmth and dedication, strives to make every visit an
+                unforgettable event.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__heading">What Our Customers Say</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <h3 class="reviews__title">“The best restaurant”</h3>
+              <p class="reviews__text">
+                Last night, we dined at place and were simply blown away. From
+                the moment we stepped in, we were enveloped in an inviting
+                atmosphere and greeted with warm smiles.
+              </p>
+              <div class="reviews__author">
+                <img
+                  class="reviews__img"
+                  src="./images/home/girl-2.webp"
+                  width="70"
+                  height="70"
+                  alt="author-photo"
+                />
+                <div>
+                  <p class="reviews__name">Sophire Robson</p>
+                  <p class="reviews__city">Los Angeles, CA</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <h3 class="reviews__title">“Simply delicious”</h3>
+              <p class="reviews__text">
+                Place exceeded my expectations on all fronts. The ambiance was
+                cozy and relaxed, making it a perfect venue for our anniversary
+                dinner. Each dish was prepared and beautifully presented.
+              </p>
+              <div class="reviews__author">
+                <img
+                  class="reviews__img"
+                  src="./images/home/man.webp"
+                  width="70"
+                  height="70"
+                  alt="author-photo"
+                />
+                <div>
+                  <p class="reviews__name">Matt Cannon</p>
+                  <p class="reviews__city">San Diego, CA</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <h3 class="reviews__title">“One of a kind restaurant”</h3>
+              <p class="reviews__text">
+                The culinary experience at place is first to none. The
+                atmosphere is vibrant, the food - nothing short of
+                extraordinary. The food was the highlight of our evening. Highly
+                recommended.
+              </p>
+              <div class="reviews__author">
+                <img
+                  class="reviews__img"
+                  src="./images/home/girl-1.webp"
+                  width="70"
+                  height="70"
+                  alt="author-photo"
+                />
+                <div>
+                  <p class="reviews__name">Andy Smith</p>
+                  <p class="reviews__city">San Francisco, CA</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__main">
+            <div class="footer__logo">
+              <a class="footer__logo-link" href="./">
+                <img
+                  class="footer__logo-img"
+                  src="./images/logo-white.svg"
+                  width="230"
+                  height="55"
+                  alt="logo-white"
+                />
+              </a>
+            </div>
+            <p class="footer__description">
+              In the new era of technology we look a in the future with
+              certainty and pride to for our company and.
+            </p>
+
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" title="Twitter">
+                  <svg
+                    class="footer__social-icon"
+                    width="14"
+                    height="14"
+                    aria-label="twitter icon"
+                  >
+                    <use href="./icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" title="Facebook">
+                  <svg
+                    class="footer__social-icon"
+                    width="14"
+                    height="14"
+                    aria-label="facebook icon"
+                  >
+                    <use href="./icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" title="Instagram">
+                  <svg
+                    class="footer__social-icon"
+                    width="14"
+                    height="14"
+                    aria-label="instagram icon"
+                  >
+                    <use href="./icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" title="Gihub">
+                  <svg
+                    class="footer__social-icon"
+                    width="14"
+                    height="14"
+                    aria-label="github icon"
+                  >
+                    <use href="./icons/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <nav class="footer__nav">
+              <div class="footer__nav-wrap">
+                <p class="footer__nav-title">Pages</p>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./">Home</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">About</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Menu</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Delivery</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__nav-wrap">
+                <p class="footer__nav-title">Utility Pages</p>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="./">Start here</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Styleguide</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Password Protected</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">404 Not Found</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Licenses</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Changelog</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">View More</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer__instagram">
+            <p class="footer__instagram-title">Follow Us On Instagram</p>
+            <ul class="footer__instagram-list">
+              <li class="footer__instagram-item">
+                <a class="footer__instagram-link" href="#">
+                  <img
+                    class="footer__instagram-img"
+                    src="./images/home/in-eggs.webp"
+                    width="194"
+                    height="170"
+                    alt="eggs"
+                /></a>
+              </li>
+              <li class="footer__instagram-item">
+                <a class="footer__instagram-link" href="#">
+                  <img
+                    class="footer__instagram-img"
+                    src="./images/home/in-fries.webp"
+                    width="194"
+                    height="170"
+                    alt="fries"
+                  />
+                </a>
+              </li>
+              <li class="footer__instagram-item">
+                <a class="footer__instagram-link" href="#">
+                  <img
+                    class="footer__instagram-img"
+                    src="./images/home/in-salads.webp"
+                    width="194"
+                    height="170"
+                    alt="salads"
+                  />
+                </a>
+              </li>
+              <li class="footer__instagram-item">
+                <a class="footer__instagram-link" href="#">
+                  <img
+                    class="footer__instagram-img"
+                    src="./images/home/in-pancakes.webp"
+                    width="194"
+                    height="170"
+                    alt="pancakes"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            Copyright © 2023 Hashtag Developer. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/mobile-menu.js"></script>
+    <script type="module" src="./src/js/booking-form.js"></script>
+    <script type="module" src="./src/js/booking-validation.js"></script>
+
+    <div class="booking-form__overlay js-booking-form booking-form-is-hide">
+      <form class="booking-form" method="get">
+        <div class="booking-form__close">
+          <button
+            class="booking-form__close-button js-booking-form__close-button"
+            type="button"
+          >
+            <svg class="booking-form__close-icon" width="20" height="20">
+              <use href="./icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="booking-form__row">
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="date">Date</label>
+            <input
+              class="booking-form__input js-date-input"
+              type="date"
+              name="date"
+              id="date"
+              required
+            />
+            <svg class="booking-form__icon" width="16" height="16">
+              <use href="./public/icons/sprite.svg#calendar"></use>
+            </svg>
+          </div>
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="time">Time</label>
+            <input
+              class="booking-form__input js-time-input"
+              type="time"
+              name="time"
+              id="time"
+              min="09:00"
+              max="21:00"
+              required
+            />
+            <svg class="booking-form__icon" width="16" height="16">
+              <use href="./public/icons/sprite.svg#clock"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="booking-form__row">
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="name">Name</label>
+            <input
+              class="booking-form__input js-name-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              minlength="2"
+              maxlength="26"
+              required
+            />
+          </div>
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="phone">Phone</label>
+            <input
+              class="booking-form__input js-tel-input"
+              type="tel"
+              name="tel"
+              id="phone"
+              placeholder="x-xxx-xxx-xxxx"
+              minlength="11"
+              maxlength="11"
+              required
+            />
+          </div>
+        </div>
+        <div class="booking-form__row">
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="total">Total</label>
+            <select
+              class="booking-form__select"
+              name="total"
+              id="total"
+              required
+            >
+              <option value="">--please choose--</option>
+              <option value="1">1 person</option>
+              <option value="2">2 person</option>
+              <option value="3">3 person</option>
+              <option value="4">4 person</option>
+              <option value="more">More</option>
+            </select>
+            <svg class="booking-form__icon" width="16" height="16">
+              <use href="./icons/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+        </div>
+
+        <button
+          class="booking-form__button js-booking-form__button"
+          type="submit"
+        >
+          Book a table
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
