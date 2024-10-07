@@ -20,8 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Playfair+Display:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-GpgprWnp.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DNDquvcS.css">
+    <script type="module" crossorigin src="./assets/index-CZHST3q_.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C0niVSPd.css">
   </head>
   <body>
     <header class="header">
@@ -164,7 +164,7 @@
                 </a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">About</a>
+                <a class="nav-list__link" href="./about.html">About</a>
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">Menu</a>
@@ -187,6 +187,34 @@
               </svg>
             </button>
           </div>
+
+          <div class="mobile-action">
+            <div class="mobile-action__booking js-mobile-action__booking">
+              <button class="mobile-action__booking-btn" type="button">
+                <svg
+                  class="mobile-action__booking-icon"
+                  width="18"
+                  height="18"
+                  aria-label="calendar icon"
+                >
+                  <use href="./icons/sprite.svg#calendar"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="mobile-action__call">
+              <a class="mobile-action__call-link" href="tel:+4148570107">
+                <svg
+                  class="mobile-action__call-icon"
+                  width="18"
+                  height="18"
+                  aria-label="call icon"
+                >
+                  <use href="./icons/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="mobile-menu menu-is-hide js-mobile-menu">
@@ -196,7 +224,7 @@
                 <a class="mobile-menu__nav-link" href="./">Home</a>
               </li>
               <li class="mobile-menu__nav-item">
-                <a class="mobile-menu__nav-link" href="#">About</a>
+                <a class="mobile-menu__nav-link" href="./about.html">About</a>
               </li>
               <li class="mobile-menu__nav-item">
                 <a class="mobile-menu__nav-link" href="#">Menu</a>
@@ -259,135 +287,6 @@
             <a class="hero__link hero__link_primary" href="#">Book a table</a>
             <a class="hero__link hero__link_secondary" href="#">Explore menu</a>
           </div>
-
-          <div class="mobile-action">
-            <div class="mobile-action__booking js-mobile-action__booking">
-              <button class="mobile-action__booking-btn" type="button">
-                <svg
-                  class="mobile-action__booking-icon"
-                  width="18"
-                  height="18"
-                  aria-label="calendar icon"
-                >
-                  <use href="./icons/sprite.svg#calendar"></use>
-                </svg>
-              </button>
-            </div>
-
-            <div class="mobile-action__call">
-              <a class="mobile-action__call-link" href="tel:+4148570107">
-                <svg
-                  class="mobile-action__call-icon"
-                  width="18"
-                  height="18"
-                  aria-label="call icon"
-                >
-                  <use href="./icons/sprite.svg#phone"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="booking-form__overlay js-booking-form booking-form-is-hide">
-          <form class="booking-form" method="get">
-            <div class="booking-form__close">
-              <button
-                class="booking-form__close-button js-booking-form__close-button"
-                type="button"
-              >
-                <svg class="booking-form__close-icon" width="20" height="20">
-                  <use href="./icons/sprite.svg#close"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="booking-form__row">
-              <div class="booking-form__field">
-                <label class="booking-form__label" for="date">Date</label>
-                <input
-                  class="booking-form__input js-date-input"
-                  type="date"
-                  name="date"
-                  id="date"
-                  required
-                />
-                <svg class="booking-form__icon" width="16" height="16">
-                  <use href="./assets/sprite-jpnfpl8X.svg#calendar"></use>
-                </svg>
-              </div>
-              <div class="booking-form__field">
-                <label class="booking-form__label" for="time">Time</label>
-                <input
-                  class="booking-form__input js-time-input"
-                  type="time"
-                  name="time"
-                  id="time"
-                  min="09:00"
-                  max="21:00"
-                  required
-                />
-                <svg class="booking-form__icon" width="16" height="16">
-                  <use href="./assets/sprite-jpnfpl8X.svg#clock"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="booking-form__row">
-              <div class="booking-form__field">
-                <label class="booking-form__label" for="name">Name</label>
-                <input
-                  class="booking-form__input js-name-input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter your name"
-                  minlength="2"
-                  maxlength="26"
-                  required
-                />
-              </div>
-              <div class="booking-form__field">
-                <label class="booking-form__label" for="phone">Phone</label>
-                <input
-                  class="booking-form__input js-tel-input"
-                  type="tel"
-                  name="tel"
-                  id="phone"
-                  placeholder="x-xxx-xxx-xxxx"
-                  minlength="11"
-                  maxlength="11"
-                  required
-                />
-              </div>
-            </div>
-            <div class="booking-form__row">
-              <div class="booking-form__field">
-                <label class="booking-form__label" for="total">Total</label>
-                <select
-                  class="booking-form__select"
-                  name="total"
-                  id="total"
-                  required
-                >
-                  <option value="">--please choose--</option>
-                  <option value="1">1 person</option>
-                  <option value="2">2 person</option>
-                  <option value="3">3 person</option>
-                  <option value="4">4 person</option>
-                  <option value="more">More</option>
-                </select>
-                <svg class="booking-form__icon" width="16" height="16">
-                  <use href="./icons/sprite.svg#arrow-down"></use>
-                </svg>
-              </div>
-            </div>
-
-            <button
-              class="booking-form__button js-booking-form__button"
-              type="submit"
-            >
-              Book a table
-            </button>
-          </form>
         </div>
       </section>
 
@@ -1066,5 +965,106 @@
       </div>
     </footer>
 
+
+    <div class="booking-form__overlay js-booking-form booking-form-is-hide">
+      <form class="booking-form" method="get">
+        <div class="booking-form__close">
+          <button
+            class="booking-form__close-button js-booking-form__close-button"
+            type="button"
+          >
+            <svg class="booking-form__close-icon" width="20" height="20">
+              <use href="./icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="booking-form__row">
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="date">Date</label>
+            <input
+              class="booking-form__input js-date-input"
+              type="date"
+              name="date"
+              id="date"
+              required
+            />
+            <svg class="booking-form__icon" width="16" height="16">
+              <use href="./assets/sprite-jpnfpl8X.svg#calendar"></use>
+            </svg>
+          </div>
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="time">Time</label>
+            <input
+              class="booking-form__input js-time-input"
+              type="time"
+              name="time"
+              id="time"
+              min="09:00"
+              max="21:00"
+              required
+            />
+            <svg class="booking-form__icon" width="16" height="16">
+              <use href="./assets/sprite-jpnfpl8X.svg#clock"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="booking-form__row">
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="name">Name</label>
+            <input
+              class="booking-form__input js-name-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              minlength="2"
+              maxlength="26"
+              required
+            />
+          </div>
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="phone">Phone</label>
+            <input
+              class="booking-form__input js-tel-input"
+              type="tel"
+              name="tel"
+              id="phone"
+              placeholder="x-xxx-xxx-xxxx"
+              minlength="11"
+              maxlength="11"
+              required
+            />
+          </div>
+        </div>
+        <div class="booking-form__row">
+          <div class="booking-form__field">
+            <label class="booking-form__label" for="total">Total</label>
+            <select
+              class="booking-form__select"
+              name="total"
+              id="total"
+              required
+            >
+              <option value="">--please choose--</option>
+              <option value="1">1 person</option>
+              <option value="2">2 person</option>
+              <option value="3">3 person</option>
+              <option value="4">4 person</option>
+              <option value="more">More</option>
+            </select>
+            <svg class="booking-form__icon" width="16" height="16">
+              <use href="./icons/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+        </div>
+
+        <button
+          class="booking-form__button js-booking-form__button"
+          type="submit"
+        >
+          Book a table
+        </button>
+      </form>
+    </div>
   </body>
 </html>
